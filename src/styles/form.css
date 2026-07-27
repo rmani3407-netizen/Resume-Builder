@@ -1,0 +1,553 @@
+
+/* ==============================
+   PREMIUM AI BACKGROUND
+============================== */
+
+/* All form inputs */
+.form-section input,
+.form-section textarea,
+.form-section select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    background: #e2e8f0;
+    color: #1e293b;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+/* Placeholder */
+.form-section input::placeholder,
+.form-section textarea::placeholder {
+    color: #64748b;
+}
+
+/* Focus Effect */
+.form-section input:focus,
+.form-section textarea:focus,
+.form-section select:focus {
+    background: #e2e8f0;
+    border-color: #040404;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+.resume-builder-page{
+
+    min-height:100vh;
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    gap:35px;
+
+    padding:40px;
+
+
+    background:
+    linear-gradient(
+        135deg,
+        #020617,
+        #0f172a,
+        #172554
+    );
+
+
+}/* ---------- Form Panel ---------- */
+
+/* ---------- Form Panel ---------- */
+
+.form-panel{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+
+    overflow:hidden;
+
+    padding:25px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.form-header {
+    position: sticky;
+    top: 0;
+    background: #0a0909;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 10;
+}
+
+.form-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.form-header p {
+    margin-top: 6px;
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* ---------- Scrollable Content ---------- */
+
+.form-content{
+    flex:1;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:24px;
+
+    padding-right:8px;
+}
+
+/* Scrollbar */
+
+.form-content::-webkit-scrollbar{
+    width:8px;
+}
+
+.form-content::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+.form-content::-webkit-scrollbar-thumb{
+    background:#212121;
+    border-radius:20px;
+}
+/* ---------- Section Card ---------- */
+
+.form-section {
+    background: #d1d5db;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 22px;
+    transition: all 0.25s ease;
+}
+
+.form-section:hover {
+    border-color: #2563eb;
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.12);
+}
+
+.form-section h3 {
+    margin-bottom: 18px;
+    color: #0f172a;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ---------- Labels ---------- */
+
+.form-panel label {
+    display: block;
+    margin-bottom: 6px;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ---------- Inputs ---------- */
+
+.form-panel input,
+.form-panel textarea,
+.form-panel select {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: all 0.25s ease;
+    background: #fafafa;
+}
+
+.form-panel textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-panel input:focus,
+.form-panel textarea:focus,
+.form-panel select:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+/* ---------- Buttons ---------- */
+
+.form-panel button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.form-panel button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+.section-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.section-header h3{
+    margin:0;
+    font-size:20px;
+    color:#0f172a;
+}
+
+.section-header span{
+    font-size:13px;
+    color:#64748b;
+    background:#eff6ff;
+    padding:5px 12px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.summary-box{
+    min-height:170px;
+    resize:vertical;
+}
+
+.hint{
+    margin-top:10px;
+    font-size:13px;
+    color:#64748b;
+}/* ===========================
+   Experience
+=========================== */
+
+.experience-card{
+
+    margin-top:20px;
+
+    padding:22px;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+    background:#fafcff79;
+
+}
+
+.checkbox-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:18px 0;
+
+    font-weight:500;
+
+    color:#475569;
+
+}
+
+.checkbox-row input{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+.add-btn{
+
+    margin-top:20px;
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.add-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.delete-btn{
+
+    margin-top:18px;
+
+    background:#ef4444;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.delete-btn:hover{
+
+    background:#dc2626;
+
+}/* ===========================
+   Skills
+=========================== */
+
+.section-subtitle{
+    color:#64748b;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.form-section label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}/* ===========================
+   Projects
+=========================== */
+
+.project-card{
+
+    margin-top:20px;
+
+    padding:22px;
+
+    border-radius:16px;
+
+    border:1px solid #e2e8f0;
+
+    background:#d1d5db;
+
+    transition:.3s;
+
+}
+
+.project-card:hover{
+
+    border-color:#2563eb;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.12);
+
+}
+
+.project-card textarea{
+
+    margin-top:18px;
+
+}
+/* ===========================
+   Education
+=========================== */
+
+.education-card{
+
+    margin-top:20px;
+
+    padding:22px;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+    background:#d1d5db;
+
+    transition:.3s;
+
+}
+
+.education-card:hover{
+
+    border-color:#2563eb;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.12);
+
+}
+
+/* ===========================
+   Certificates
+=========================== */
+
+.certificate-card{
+
+    margin-top:20px;
+
+    padding:22px;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+    background:#d1d5db;
+
+    transition:.3s;
+
+}
+
+.certificate-card:hover{
+
+    border-color:#2563eb;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.12);
+
+}/* ===========================
+   Achievements
+=========================== */
+
+.achievement-card{
+
+    margin-top:20px;
+
+    padding:22px;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+    background:#d1d5db;
+
+    transition:.3s;
+
+}
+
+.achievement-card:hover{
+
+    border-color:#2563eb;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.12);
+
+}
+/* ===========================
+   Languages
+=========================== */
+
+.language-card{
+
+    margin-top:20px;
+
+    padding:22px;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+    background:#d1d5db;
+
+    transition:.3s;
+
+}
+
+.language-card:hover{
+
+    border-color:#2563eb;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.12);
+
+}
+
+/* Select Styling */
+
+.form-section select{
+
+    width:100%;
+
+    padding:13px;
+
+    border-radius:12px;
+
+    border:1px solid #cbd5e1;
+
+    font-size:15px;
+
+    background:white;
+
+    outline:none;
+
+}
+
+.form-section select:focus{
+
+    border-color:#2563eb;
+
+}
+.input-group{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+.form-section input,
+.form-section textarea,
+.form-section select{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    font-size:15px;
+    outline:none;
+    margin-top:14px;      /* Space between inputs */
+}
+
+.form-section input:first-of-type,
+.form-section textarea:first-of-type,
+.form-section select:first-of-type{
+    margin-top:20px;
+}

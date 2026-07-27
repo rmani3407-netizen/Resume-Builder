@@ -1,0 +1,184 @@
+/* ================= Resume Preview ================= */
+/* Resume Header Links */
+
+.header-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:18px;          /* Space between LinkedIn, GitHub, Portfolio, LeetCode */
+    margin-top:12px;
+}
+
+.header-links a{
+    text-decoration:none;
+    color:#2563eb;
+    font-size:14px;
+    font-weight:500;
+    transition:.25s;
+}
+
+.header-links a:hover{
+    color:#1d4ed8;
+    text-decoration:underline;
+}
+.preview-container{
+    flex:1;
+    height:calc(100vh - 90px);   /* Header height */
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    padding:30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+    background:transparent;
+
+    scrollbar-width:thin;
+    scrollbar-color:#3b82f6 #0f172a;
+}
+
+/* Chrome Scrollbar */
+.preview-container::-webkit-scrollbar{
+    width:10px;
+}
+
+.preview-container::-webkit-scrollbar-track{
+    background:#070b15;
+    border-radius:20px;
+}
+
+.preview-container::-webkit-scrollbar-thumb{
+    background:#020812;
+    border-radius:20px;
+}
+
+.preview-container::-webkit-scrollbar-thumb:hover{
+    background:#2563eb;
+}
+
+/* Resume */
+.preview-panel{
+
+    width:210mm;
+    min-height:297mm;
+
+    flex-shrink:0;
+
+    margin:0 auto 30px;
+
+    padding:50px;
+
+    background:linear-gradient(
+        180deg,
+        #f8fbff 0%,
+        #eef6ff 100%
+    );
+
+    color:#1e293b;
+
+    border:1px solid rgba(59,130,246,.15);
+
+    border-radius:24px;
+
+    box-shadow:0 20px 60px rgba(15,23,42,.22);
+
+    line-height:1.8;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-sizing:border-box;
+}
+
+.preview-panel::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-150px;
+    right:-150px;
+
+    width:320px;
+    height:320px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(59,130,246,.12),
+        transparent 70%
+    );
+
+    pointer-events:none;
+}
+
+/* ================= Header ================= */
+
+.preview-panel h1{
+    text-align:center;
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:1px;
+    color:#111827;
+    margin-bottom:8px;
+}
+
+.preview-panel .contact{
+    text-align:center;
+    font-size:14px;
+    color:#555;
+    margin-bottom:8px;
+}
+
+.links{
+    text-align:center;
+    font-size:14px;
+    color:#2563eb;
+    margin-bottom:18px;
+    word-break:break-word;
+}
+
+/* ================= Section ================= */
+
+.preview-panel h2{
+    font-size:18px;
+    font-weight:700;
+    text-transform:uppercase;
+    color:#222;
+    border-bottom:2px solid #333;
+    padding-bottom:6px;
+    margin-top:24px;
+    margin-bottom:12px;
+    letter-spacing:.5px;
+}
+
+.preview-panel h3{
+    font-size:16px;
+    font-weight:600;
+    color:#111;
+    margin:10px 0 4px;
+}
+
+.preview-panel p{
+    font-size:14px;
+    color:#444;
+    margin-bottom:6px;
+    line-height:1.7;
+}
+
+.preview-panel hr{
+    display:none;
+}
+
+.preview-education,
+.preview-project,
+.preview-experience,
+.preview-certificate,
+.preview-achievement,
+.preview-language{
+    margin-bottom:18px;
+}
