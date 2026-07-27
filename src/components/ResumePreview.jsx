@@ -15,18 +15,19 @@ function ResumePreview() {
       <div className="resume-header">
         <h1>{resumeData.fullName || "YOUR NAME"}</h1>
 
-        <p className="contact">
-          {resumeData.location}
-          {resumeData.location &&
-          (resumeData.phone || resumeData.email)
-            ? " | "
-            : ""}
-          {resumeData.phone}
-          {resumeData.phone && resumeData.email
-            ? " | "
-            : ""}
-          {resumeData.email}
-        </p>
+     <p className="contact">
+  {resumeData.email}
+
+  {resumeData.email && resumeData.phone ? " | " : ""}
+
+  {resumeData.phone}
+
+  {(resumeData.email || resumeData.phone) && resumeData.location
+    ? " | "
+    : ""}
+
+  {resumeData.location}
+</p>
 
         <div className="header-links">
           {resumeData.linkedin && (

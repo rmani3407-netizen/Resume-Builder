@@ -25,13 +25,7 @@ function PersonalInfo() {
           onChange={handleChange}
         />
 
-        <input
-          type="text"
-          name="jobTitle"
-          placeholder="Job Title (Software Developer)"
-          value={resumeData.jobTitle}
-          onChange={handleChange}
-        />
+       
 
         <input
           type="email"
